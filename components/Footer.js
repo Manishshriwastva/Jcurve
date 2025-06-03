@@ -82,12 +82,12 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3">
               {[
-                { title: 'Web Development', href: '/services/web-development' },
-                { title: 'App Development', href: '/services/app-development' },
-                { title: 'SEO Services', href: '/services/seo' },
-                { title: 'UI/UX Design', href: '/services/ui-ux-design' },
-                { title: 'IT Consulting', href: '/services/it-consulting' },
-                { title: 'Maintenance & Support', href: '/services/maintenance' },
+                { title: 'Web Development', href: '#services/web-development' },
+                { title: 'App Development', href: '#services/app-development' },
+                { title: 'SEO Services', href: '#services/seo' },
+                { title: 'UI/UX Design', href: '#services/ui-ux-design' },
+                { title: 'IT Consulting', href: '#services/it-consulting' },
+                { title: 'Maintenance & Support', href: '/contact' },
               ].map((service) => (
                 <li key={service.href}>
                   <Link 

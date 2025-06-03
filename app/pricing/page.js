@@ -53,7 +53,7 @@ export default function PricingPage() {
           {/* Billing Toggle */}
           <div className="flex justify-center items-center mb-16">
             <div className="flex items-center gap-4">
-              <span className={`text-lg ${billingCycle === 'monthly' ? 'font-medium text-foreground' : 'text-muted-foreground'}`}>
+              <span className={`text-lg Rs {billingCycle === 'monthly' ? 'font-medium text-foreground' : 'text-muted-foreground'}`}>
                 Monthly
               </span>
               <div className="flex items-center">
@@ -66,7 +66,7 @@ export default function PricingPage() {
                   Toggle billing cycle
                 </Label>
               </div>
-              <span className={`text-lg flex items-center gap-2 ${billingCycle === 'annual' ? 'font-medium text-foreground' : 'text-muted-foreground'}`}>
+              <span className={`text-lg flex items-center gap-2 Rs{billingCycle === 'annual' ? 'font-medium text-foreground' : 'text-muted-foreground'}`}>
                 Annually
                 <span className="bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded-full">
                   Save 10%
@@ -95,14 +95,14 @@ export default function PricingPage() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="flex"
                     >
-                      <Card className={`w-full flex flex-col ${plan.popular ? 'border-primary shadow-md relative' : ''}`}>
+                      <Card className={`w-full flex flex-col Rs{plan.popular ? 'border-primary shadow-md relative' : ''}`}>
                         {plan.popular && (
                           <div className="absolute top-0 right-0 -translate-y-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
                             Most Popular
                           </div>
                         )}
                         
-                        <CardHeader className={`${plan.popular ? 'pb-8' : ''}`}>
+                        <CardHeader className={`Rs{plan.popular ? 'pb-8' : ''}`}>
                           <CardTitle>{plan.name}</CardTitle>
                           <CardDescription className="mt-2">{plan.description}</CardDescription>
                         </CardHeader>
@@ -110,14 +110,14 @@ export default function PricingPage() {
                         <CardContent className="flex-grow">
                           <div className="mb-6">
                             <p className="text-4xl font-bold">
-                              ${billingCycle === 'monthly' ? plan.price : Math.floor(plan.price * 10.8)}
+                              Rs{billingCycle === 'monthly' ? plan.price : Math.floor(plan.price * 10.8)}
                               <span className="text-muted-foreground text-base font-normal">
                                 /{billingCycle === 'monthly' ? 'month' : 'year'}
                               </span>
                             </p>
                             {billingCycle === 'annual' && (
                               <p className="text-sm text-muted-foreground">
-                                Save ${Math.floor(plan.price * 1.2)} with annual billing
+                                Save Rs{Math.floor(plan.price * 1.2)} with annual billing
                               </p>
                             )}
                           </div>

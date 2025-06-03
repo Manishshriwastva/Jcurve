@@ -64,7 +64,7 @@ export default function ServicesPage() {
                   </CardContent>
                   <CardFooter>
                     <Button asChild>
-                      <Link href={`/services/${service.slug}`}>
+                      <Link href={'/contact'}>
                         Learn more <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
