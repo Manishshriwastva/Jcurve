@@ -39,11 +39,21 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo with light/dark switch */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-primary font-bold text-xl md:text-2xl">
-              Jcurve<span className="text-foreground">Technology</span>
-            </span>
+            {theme === 'dark' ? (
+              <img
+                src="/Jcurve.png"
+                alt="Jcurve Dark Logo"
+                className="h-14 md:h-20 lg:h-20 w-auto max-w-[220px] object-contain"
+              />
+            ) : (
+              <img
+                src="/Jcurve3.png"
+                alt="Jcurve Light Logo"
+                className="h-14 md:h-20 lg:h-20 w-auto max-w-[220px] object-contain"
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}
@@ -55,8 +65,8 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={`px-4 py-2 text-sm font-medium rounded-md transition-colors relative ${
-                    isActive 
-                      ? 'text-primary' 
+                    isActive
+                      ? 'text-primary'
                       : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
@@ -93,14 +103,14 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             >
               <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Button 
-              variant="ghost" 
+            <Button
+              variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
             >
