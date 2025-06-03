@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">Manishshriwastva.com</span>
+                <span className="text-muted-foreground">Manishshriwastva@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
@@ -147,7 +147,7 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-              © 2025 TechNova. All rights reserved.
+              © 2025 Jcurve Technology. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link href="#privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

@@ -105,9 +105,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-lg mb-1">Email</h3>
                     <p className="text-muted-foreground mb-1">For general inquiries:</p>
-                    <p className="font-medium">info@technova.com</p>
+                    <p className="font-medium">info@jcurve.com</p>
                     <p className="text-muted-foreground mt-2 mb-1">For support:</p>
-                    <p className="font-medium">support@technova.com</p>
+                    <p className="font-medium">Manishshriwastva@gmail.com</p>
                   </div>
                 </div>
                 
@@ -118,9 +118,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-lg mb-1">Phone</h3>
                     <p className="text-muted-foreground mb-1">Mon-Fri, 9am-5pm EST:</p>
-                    <p className="font-medium">+1 (555) 123-4567</p>
+                    <p className="font-medium">+91 8709011582</p>
                     <p className="text-muted-foreground mt-2 mb-1">24/7 Support:</p>
-                    <p className="font-medium">+1 (555) 987-6543</p>
+                    <p className="font-medium">+91 9123153528</p>
                   </div>
                 </div>
                 
@@ -131,8 +131,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-lg mb-1">Office Location</h3>
                     <p className="text-muted-foreground mb-1">Headquarters:</p>
-                    <p className="font-medium">123 Tech Avenue, Suite 200</p>
-                    <p className="font-medium">San Francisco, CA 94107</p>
+                    <p className="font-medium">Sec-2 Noida 201301</p>
+                    <p className="font-medium">Uttar Pradesh (India)</p>
                   </div>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                placeholder="John Doe" 
+                                placeholder="Enter Your Name" 
                                 required 
                               />
                             </div>
@@ -205,7 +205,7 @@ export default function ContactPage() {
                                 type="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                placeholder="john@example.com" 
+                                placeholder="Enter Your Email" 
                                 required 
                               />
                             </div>
@@ -219,7 +219,7 @@ export default function ContactPage() {
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                placeholder="+1 (555) 123-4567" 
+                                placeholder="+91 **********" 
                               />
                             </div>
                             <div className="space-y-2">
@@ -382,7 +382,7 @@ export default function ContactPage() {
             {/* Replace with an actual map or embed Google Maps */}
             <div className="aspect-video bg-muted relative">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.77047437704!2d-122.4455892!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1649233376291!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2218.647118705166!2d77.3837351831829!3d28.614151251629178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef8cf2b59ee1%3A0x683baf1952b64adb!2s78%2C%20C%20Block%20Road%2C%20B%20Block%2C%20Sector%2065%2C%20Noida%2C%20Uttar%20Pradesh%20201307!5e0!3m2!1sen!2sin!4v1748886447678!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
