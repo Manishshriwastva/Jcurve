@@ -96,11 +96,11 @@ export default function PricingPage() {
                       className="flex"
                     >
                       <Card className={`w-full flex flex-col Rs{plan.popular ? 'border-primary shadow-md relative' : ''}`}>
-                        {plan.popular && (
-                          <div className="absolute top-0 right-0 -translate-y-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+                        {/* {plan.popular && (
+                          <div className="absolute top-0 right-0 -translate-y-1/2 px-4 py-1 bg-yellow-500 text-primary-foreground text-sm font-medium rounded-full">
                             Most Popular
                           </div>
-                        )}
+                        )} */}
                         
                         <CardHeader className={`Rs{plan.popular ? 'pb-8' : ''}`}>
                           <CardTitle>{plan.name}</CardTitle>

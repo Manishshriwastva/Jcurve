@@ -41,15 +41,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo with light/dark switch */}
           <Link href="/" className="flex items-center gap-2">
-            {theme === 'dark' ? (
+            {theme === 'light' ? (
               <img
-                src="/Jcurve.png"
+                src="/Jcurve3.png"
                 alt="Jcurve Dark Logo"
                 className="h-14 md:h-20 lg:h-20 w-auto max-w-[220px] object-contain"
               />
             ) : (
               <img
-                src="/Jcurve3.png"
+                src="/Jcurve.png"
                 alt="Jcurve Light Logo"
                 className="h-14 md:h-20 lg:h-20 w-auto max-w-[220px] object-contain"
               />
