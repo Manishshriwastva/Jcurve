@@ -84,7 +84,7 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded in 2020, TechNova began as a small team of tech enthusiasts with a shared vision: to help businesses 
+                    Founded in 2020, Jcurve Technology began as a small team of tech enthusiasts with a shared vision: to help businesses 
                     harness the power of technology to achieve their goals.
                   </p>
                   <p>
@@ -92,7 +92,7 @@ export default function AboutPage() {
                     As we delivered successful project after successful project, our reputation for excellence grew, as did our team.
                   </p>
                   <p>
-                    Today, TechNova stands as a trusted partner for businesses of all sizes, from startups to enterprise corporations, 
+                    Today, Jcurve Technology stands as a trusted partner for businesses of all sizes, from startups to enterprise corporations, 
                     across various industries. Our commitment to innovation, quality, and client satisfaction remains the cornerstone 
                     of everything we do.
                   </p>
@@ -233,7 +233,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                TechNova By The Numbers
+                Jcueve Technology By The Numbers
               </h2>
               <p className="text-lg opacity-90 max-w-3xl mx-auto">
                 Our growth and success reflect our commitment to excellence and client satisfaction.
@@ -263,89 +263,97 @@ export default function AboutPage() {
       </section>
 
       {/* Company Timeline */}
-      <section className="w-full py-20 px-4 md:px-6 lg:px-8">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
-                Our Journey
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Company Timeline
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Our growth story from a small startup to an industry leader.
-              </p>
-            </motion.div>
-          </div>
+      <section className="w-full py-24 px-4 md:px-8 lg:px-12 bg-background relative overflow-hidden">
+  <div className="max-w-5xl mx-auto text-center mb-20">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <span className="inline-block px-4 py-1 bg-secondary/10 text-white font-semibold rounded-full mb-4">
+        Our Journey
+      </span>
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-primary drop-shadow-xl">
+        Company Timeline
+      </h2>
+      <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+        A logical ascent into innovation — visualized as a 3D climb.
+      </p>
+    </motion.div>
+  </div>
 
-          <div className="space-y-16">
-            {[
-              {
-                year: "2020",
-                title: "Foundation",
-                description: "TechNova was founded with a vision to help businesses leverage technology for growth."
-              },
-              {
-                year: "2021",
-                title: "Expansion",
-                description: "We expanded our service offerings and doubled our team size to meet growing client demands."
-              },
-              {
-                year: "2022",
-                title: "New Office",
-                description: "Opened our new headquarters and expanded to international markets."
-              },
-              {
-                year: "2023",
-                title: "Strategic Partnerships",
-                description: "Formed strategic partnerships with leading technology providers to enhance our service offerings."
-              },
-              {
-                year: "2024",
-                title: "Industry Recognition",
-                description: "Received multiple industry awards for innovation and client satisfaction."
-              },
-              {
-                year: "2025",
-                title: "Global Presence",
-                description: "Established offices in multiple countries to better serve our global client base."
-              }
-            ].map((event, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative grid grid-cols-1 md:grid-cols-5 gap-8 items-start ${
-                  index % 2 === 0 ? '' : 'md:flex-row-reverse'
-                }`}
-              >
-                <div className={`md:col-span-1 flex ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-primary-foreground font-bold text-lg">
-                    {event.year}
-                  </div>
-                </div>
+  <div className="relative max-w-5xl mx-auto">
+    {/* Central vertical line */}
+    <div className="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-1 bg-border z-0" />
 
-                <div className={`md:col-span-4 ${index % 2 === 0 ? '' : 'md:text-right'}`}>
-                  <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                  <p className="text-muted-foreground">{event.description}</p>
-                </div>
+    <div className="flex flex-col gap-20 relative z-10">
+      {[
+        {
+          year: "2020",
+          title: "Foundation",
+          description: "Jcurve was founded with a vision to help businesses leverage technology for growth.",
+        },
+        {
+          year: "2021",
+          title: "Expansion",
+          description: "We expanded our service offerings and doubled our team size to meet growing client demands.",
+        },
+        {
+          year: "2022",
+          title: "New Office",
+          description: "Opened our new headquarters and expanded to international markets.",
+        },
+        {
+          year: "2023",
+          title: "Strategic Partnerships",
+          description: "Formed strategic partnerships with leading technology providers to enhance our service offerings.",
+        },
+        {
+          year: "2024",
+          title: "Industry Recognition",
+          description: "Received multiple industry awards for innovation and client satisfaction.",
+        },
+        {
+          year: "2025",
+          title: "Global Presence",
+          description: "Established offices in multiple countries to better serve our global client base.",
+        },
+      ].map((event, index) => {
+        const isLeft = index % 2 === 0;
+        return (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: isLeft ? -100 : 100, rotateY: isLeft ? 20 : -20 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className={`
+              relative w-full max-w-[45%] p-6 rounded-2xl bg-white/10 border border-border shadow-xl
+              backdrop-blur-md transform-gpu
+              ${isLeft ? 'self-start ml-0' : 'self-end mr-0'}
+              ${isLeft ? 'origin-left' : 'origin-right'}
+            `}
+          >
+            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full shadow text-sm font-semibold">
+              {event.year}
+            </div>
+            <h3 className="text-xl font-bold text-primary mb-2">{event.title}</h3>
+            <p className="text-muted-foreground">{event.description}</p>
+            {/* Connector Dot */}
+            <div className={`absolute top-1/2 w-4 h-4 bg-red-600 rounded-full shadow border border-white
+              ${isLeft ? '-right-2' : '-left-2'}`}></div>
+          </motion.div>
+        );
+      })}
+    </div>
 
-                {index < 5 && (
-                  <div className="absolute left-8 top-16 h-full md:left-auto md:right-auto md:top-8 md:h-auto md:w-full md:col-span-5">
-                    <div className="h-full w-px md:h-px md:w-full bg-border"></div>
-                  </div>
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Glowing backdrop effect */}
+    <div className="absolute top-10 -left-40 w-[300px] h-[300px] bg-red-600/20 blur-[120px] rounded-full z-0"></div>
+    <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-primary/20 blur-[100px] rounded-full z-0"></div>
+  </div>
+</section>
+
+
 
       {/* CTA Section */}
       <section className="w-full py-20 px-4 md:px-6 lg:px-8 bg-muted/30">

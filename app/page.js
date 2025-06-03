@@ -190,7 +190,7 @@ export default function Home() {
       <section className="w-full py-24 px-4 md:px-6 lg:px-8">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
+            <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-red-500 text-sm font-medium mb-4">
               Client Testimonials
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">What Our Clients Say</h2>

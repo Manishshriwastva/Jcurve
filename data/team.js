@@ -6,26 +6,26 @@ export const team = [
     name: "Manish Shriwastva",
     position: "Founder",
     avatar: "mk.jpeg",
-    bio: "Manish has over 5 years of experience in the tech industry and founded TechNova with a vision to help businesses leverage technology for growth."
+    bio: "Manish has over 5 years of experience in the tech industry and founded Jcurve Technology with a vision to help businesses leverage technology for growth."
   },
   {
     id: 2,
     name: "Shubham Gupta",
-    position: "CTO",
+    position: "Co-Founder",
     avatar: "sg3.jpeg",
     bio: "Shubham leads our technical team with expertise in web and app development, cloud architecture, and emerging technologies."
   },
   {
     id: 3,
     name: "Adarsh Prakash",
-    position: "CEO",
+    position: "CEO (Chief Executive Officer)",
     avatar: "as2.jpg",
     bio: "Adarsh brings a unique blend of artistic vision and technical knowledge to create stunning digital experiences."
   },
   {
     id: 4,
     name: "Saket Kumar",
-    position: "Lead Developer",
+    position: "COO (Chief Operating Officer)",
     avatar: "sk.jpg",
     bio: "Saket is an expert in full-stack development with a passion for creating efficient, scalable code."
   },

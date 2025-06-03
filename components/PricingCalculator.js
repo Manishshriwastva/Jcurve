@@ -209,7 +209,7 @@ export default function PricingCalculator() {
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <p className="text-4xl font-bold">${price.toLocaleString()}</p>
+                    <p className="text-4xl font-bold">Rs {price.toLocaleString()}</p>
                     <p className="text-sm text-muted-foreground mt-2">
                       This is an estimate. Final pricing may vary based on specific requirements.
                     </p>
