@@ -24,7 +24,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.5 }}
               >
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-                  About Jcurve Technology
+                  About Jcurve Technology Mansih Shriwastva
                 </h1>
                 <p className="text-lg text-muted-foreground mb-8">
                   We're a team of passionate tech enthusiasts dedicated to helping businesses succeed in the digital world. 
